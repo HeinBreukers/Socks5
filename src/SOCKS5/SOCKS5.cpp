@@ -254,7 +254,6 @@ namespace SOCKS5
                             }
                             else
                             {
-                                //if (verbose) wprintf(L"[-] SOCKS thread(%d) HandleClient select1 send error: %ld %ld\n", GetCurrentThreadId(), sentn, WSAGetLastError());
                                 run = false;
                                 break;
                             }
@@ -269,8 +268,6 @@ namespace SOCKS5
                         {    
                             break;
                         }                       
-                        // error
-                        //if (verbose) wprintf(L"[-] SOCKS thread(%d) HandleClient select1 recv error: %ld %ld\n", GetCurrentThreadId(), sentn, WSAGetLastError());
                     }
                 }
                 if (FD_ISSET(clientsocket, &fdset))
@@ -287,7 +284,6 @@ namespace SOCKS5
                             }
                             else
                             {
-                                //if (verbose) wprintf(L"[-] SOCKS thread(%d) HandleClient select2 send error: %ld %ld\n", GetCurrentThreadId(), sentn, WSAGetLastError());
                                 run = false;
                                 break;
                             }
@@ -302,8 +298,6 @@ namespace SOCKS5
                         {
                             break;
                         }
-                        // error
-                        //if (verbose) wprintf(L"[-] SOCKS thread(%d) HandleClient select2 recv error: %ld %ld\n", GetCurrentThreadId(), sentn, WSAGetLastError());				
                     }
                 }
             }
