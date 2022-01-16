@@ -7,5 +7,5 @@ set(SOCKS_SRC
     SOCKS5/SOCKS5.cpp)
 set(SOURCE_FILES main.cpp)
 
-add_executable(socks5example ${SOURCE_FILES} ${SOCKS_SRC})
+add_executable(SOCKS5Server ${SOURCE_FILES} ${SOCKS_SRC})
 
